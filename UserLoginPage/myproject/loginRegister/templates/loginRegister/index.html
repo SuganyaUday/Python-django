@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'loginRegister/styleform.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <main class="my-form">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">User Registration</div>
+                        <div class="login-box">
+                            <div class="login-snip">
+                                <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+                                <label for="tab-1" class="tab">Login</label>
+                                <input id="tab-2" type="radio" name="tab" class="sign-up">
+                                <label for="tab-2" class="tab">Sign Up</label>
+                                <div class="login-space">
+                                    <div class="login">
+                                        <!--<div class="card-body">-->
+                                        <form name="my-form" onsubmit="" action="" method="">
+                                            <div class="form-group row">
+                                                <label for="UserId" class="col-md-4 col-form-label text-md-right">Username:</label>
+                                                <div class="col-md-6">
+                                                    <input type="UserId" class="form-control mb-2 mr-sm-2" placeholder="Username" id="UserId" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="pwd" class="col-md-4 col-form-label text-md-right">Password:</label>
+                                                <div class="col-md-6">
+                                                    <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Password" id="pwd" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-check row square" style>
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                                <label class="form-check-label " for="exampleCheck1">Keep me Signed in</label>
+                                            </div>
+                                            <br>
+                                            <div class="col-md-6 offset-md-4">
+                                                <button type="submit" class="btn btn-primary mb-2">Signin</button>
+                                            </div>
+                                            <div class="col-md-6 offset-md-4">
+                                                <h6 class="dot">Or</h6>
+                                            </div>
+                                            <div class="form-group row">
+                                                <a href="#" class="fb btn star">
+                                                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                                                </a>
+                                            </div>
+                                            <div class="form-group row">
+                                                <a href="#" class="twitter btn star">
+                                                    <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                                                </a>
+                                            </div>
+                                            <div class="form-group row">
+                                                <a href="#" class="google btn star"><i class="fa fa-google fa-fw">
+                                                      </i> Login with Google+
+                                                    </a>
+                                            </div>
+                                        </form>
+                                        <!--</div>-->
+                                    </div>
+                                    <div class="sign-up-form">
+                                        <!--<div class="card-body">-->
+                                        <form name="my-form" onsubmit="" action="" method="">
+                                            <div class="form-group row">
+                                                <label for="email" class="col-md-4 col-form-label text-md-right">Email Address:</label>
+                                                <div class="col-md-6">
+                                                    <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Email" id="email" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="UserId" class="col-md-4 col-form-label text-md-right">Username:</label>
+                                                <div class="col-md-6">
+                                                    <input type="UserId" class="form-control mb-2 mr-sm-2" placeholder="Username" id="UserId" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="pwd" class="col-md-4 col-form-label text-md-right">Password:</label>
+                                                <div class="col-md-6">
+                                                    <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Password" id="pwd" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-check row">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                                <label class="form-check-label" for="exampleCheck1"> I agree with the <a href="javascript:;">Terms &amp; Conditions</a> for Registration.</label>
+                                            </div>
+                                            <div class="col-md-6 offset-md-4">
+                                                <button type="submit" class="btn btn-primary mb-2">Register</button>
+                                            </div>
+                                        </form>
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!--<main class="my-form">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">User Registration</div>
+                        <p>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Register
+                            </a>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                              Button with data-target
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card-body">
+                                <div class="card-body">
+                                    <form name="my-form" onsubmit="" action="" method="">
+                                        <div class="form-group row">
+                                            <label for="FirstName" class="col-md-4 col-form-label text-md-right">First Name:</label>
+                                            <div class="col-md-6">
+                                                <input type="FirstName" class="form-control mb-2 mr-sm-2" placeholder="First Name" id="FirstName">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="LastName" class="col-md-4 col-form-label text-md-right">Last Name:</label>
+                                            <div class="col-md-6">
+                                                <input type="LastName" class="form-control mb-2 mr-sm-2" placeholder="Last Name" id="LastName">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="email" class="col-md-4 col-form-label text-md-right">Email Address:</label>
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Email" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="UserId" class="col-md-4 col-form-label text-md-right">User ID:</label>
+                                            <div class="col-md-6">
+                                                <input type="UserId" class="form-control mb-2 mr-sm-2" placeholder="User ID" id="UserId">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pwd" class="col-md-4 col-form-label text-md-right">Password:</label>
+                                            <div class="col-md-6">
+                                                <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Password" id="pwd">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 offset-md-4">
+                                            <button type="submit" class="btn btn-primary mb-2">Register</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>-->
+</body>
